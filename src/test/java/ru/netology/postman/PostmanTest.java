@@ -16,6 +16,7 @@ class PostmanTest {
                 .then()
                 .statusCode(200)
                 .body("data", equalTo("some data"))
+                .header("content-type", "application/json")
         ;
     }
 }
